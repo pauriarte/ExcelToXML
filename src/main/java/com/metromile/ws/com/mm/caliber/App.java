@@ -78,20 +78,7 @@ public class App {
 			while (cellIterator.hasNext()) {
 
 				Cell cell = cellIterator.next();
-				String value = "";
-
-				switch (cell.getCellType()) {
-				case Cell.CELL_TYPE_STRING:
-					value = cell.getStringCellValue();
-					break;
-				case Cell.CELL_TYPE_NUMERIC:
-					value = String.valueOf(new Double(cell.getNumericCellValue()).intValue());
-					break;
-				case Cell.CELL_TYPE_BOOLEAN:
-					value = String.valueOf(cell.getBooleanCellValue());
-					break;
-				default:
-				}
+				String value = cell.getStringCellValue();
 
 				switch (cellIndexCounter) {
 				case 0:
