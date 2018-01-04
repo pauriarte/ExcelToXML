@@ -8,6 +8,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 public class Wrapper {
 
+    @JacksonXmlProperty(localName = "InsuredCompany_Ext")
 	@JacksonXmlElementWrapper(useWrapping = false)
 	//private List<ABAutoRepairShop> abAutoRepairShop = new LinkedList<>();
 	private List<InsuranceCompany> insuranceCompany = new LinkedList<>();
