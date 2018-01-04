@@ -9,7 +9,8 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 public class Wrapper {
 
 	@JacksonXmlElementWrapper(useWrapping = false)
-	private List<ABAutoRepairShop> abAutoRepairShop = new LinkedList<>();
+	//private List<ABAutoRepairShop> abAutoRepairShop = new LinkedList<>();
+	private List<InsuranceCompany> insuranceCompany = new LinkedList<>();
 
 	@JacksonXmlProperty(localName = "ABContactAddress")
 	@JacksonXmlElementWrapper(useWrapping = false)
@@ -19,12 +20,12 @@ public class Wrapper {
 	@JacksonXmlElementWrapper(useWrapping = false)
 	private List<Address> address = new LinkedList<>();
 
-	public List<ABAutoRepairShop> getAbAutoRepairShop() {
-		return abAutoRepairShop;
+	public List<InsuranceCompany> getInsuranceCompany() {
+		return insuranceCompany;
 	}
 
-	public void setAbAutoRepairShop(List<ABAutoRepairShop> abAutoRepairShop) {
-		this.abAutoRepairShop = abAutoRepairShop;
+	public void setInsuranceCompany(List<InsuranceCompany> insuranceCompany) {
+		this.insuranceCompany = insuranceCompany;
 	}
 
 	public List<ABContactAddress> getAbContactAddress() {
